@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Nosifer');
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Nosifer';
+}
+
+h1 {
+  font-size: 55px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: 125px 125px 125px;
+  grid-template-rows: 125px 125px 125px;
+}
+
+#board .box:nth-child(3n + 2) {
+  border-right: 6px solid #ADADAD;
+  border-left: 6px solid #ADADAD;
+}
+
+#board .box:nth-child(4), #board .box:nth-child(5), #board .box:nth-child(6) {
+  border-top: 6px solid #ADADAD;
+  border-bottom: 6px solid #ADADAD;
+}
+
+.taken {
+  display: flex;
+  font-size: 75px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player h2 {
+  margin-left: 5px;
+}
+
+#playerOne {
+  color: #32337F;
+}
+
+.player-one {
+  background-color: #32337F;
+}
+
+.player-two {
+  background-color: #CB5935;
+}
+
+#playerTwo {
+  color: #CB5935;
+}
+
+.tracker {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.turn div {
+  background-color: #D29C00;
+}
+
+#reset {
+  display: flex;
+  justify-content: center;
+}
+
+#reset button {
+  padding: 7px 11px;
+  border-radius: 3px;
+  background-color: #4A4A4F;
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+
+#reset button:hover {
+  cursor: pointer;
+  background-color: #2B2B2E;
+}
